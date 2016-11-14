@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<!-- Automatic Redirect
-<meta http-equiv="refresh" content="0; URL='https://www.kids-swim.com/TestPage.html'" />
- -->
-<h4>Kids Swim University has moved!</h4>
-<p>If you are not automatically redirected to our new site, please click
-<a href="https://www.kids-swim.com/TestPage.html">here</a>.</p>
+<html lang="en">
+<!-- Automatic Redirect Page -->
+<!-- FROM www.kidsswimu.com -->
+<!-- FROM kidsswimu.com -->
+<!-- TO www.kids-swim.com -->
+<!-- TO kids-swim.com -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://Kids-Swim.github.io/Kids-Swim/Icon48B.ico" type="image/ico" sizes="48x48">
+  <link rel="icon" href="https://Kids-Swim.github.io/Kids-Swim/Icon32B.ico" type="image/ico" sizes="32x32">
+  <link rel="icon" href="https://Kids-Swim.github.io/Kids-Swim/Icon16B.ico" type="image/ico" sizes="16x16">
+  <title>Kids Swim University | Home - The Ultimate Resource for Supplementing Your Child(ren)'s Swim Lessons!</title>
+  <meta name="author" content="Kids Swim University">
+  <meta name="keywords" content="Kids, Swim, University">
+  <meta name="description" content=
+    "Kids Swim University is the ultimate resource for supplementing your child(ren)'s swim lessons.">
+
+  <style type="text/css">
+    body:before {
+      content: attr(message);
+    }
+  </style>
+
+</head>
+<body>
+
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+
+</body>
+</html>
